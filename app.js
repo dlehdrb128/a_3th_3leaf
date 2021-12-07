@@ -1,0 +1,31 @@
+const express = require("express");
+const dotenv = require("dotenv");
+dotenv.config();
+const morgan = require(`morgan`);
+const path = require("path");
+
+const app = express();
+
+const PORT = process.env.PORT;
+
+app.set("view engine", "pug");
+app.use(morgan("dev"));
+app.use("/public/style", express.static(path.join(__dirname, "public/style")));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.render("screens/index");
+});
+
+app.get("/company", (req, res) => {
+  res.render("screens/company");
+});
+
+app.get("/question", (req, res) => {
+  res.render("screens/question");
+});
+
+app.listen(PORT, () => {
+  console.log(`${PORT} Express WEB Application Start!`);
+});
