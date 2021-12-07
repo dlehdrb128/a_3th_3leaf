@@ -6,7 +6,7 @@ const path = require("path");
 
 const app = express();
 
-const PORT = process.env.PORT;
+const PORT = 4000;
 
 app.set("view engine", "pug");
 app.use(morgan("dev"));
