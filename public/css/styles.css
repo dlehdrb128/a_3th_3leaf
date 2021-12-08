@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./test.css";
 
 .test {
   color: red;

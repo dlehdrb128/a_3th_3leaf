@@ -10,7 +10,7 @@ const PORT = 4000;
 
 app.set("view engine", "pug");
 app.use(morgan("dev"));
-app.use("/public/style", express.static(path.join(__dirname, "public/style")));
+app.use("/public", express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
