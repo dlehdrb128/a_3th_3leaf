@@ -10,6 +10,8 @@ const PORT = 4000;
 
 const test = "aaa"
 
+const test2 = "222"
+
 app.set("view engine", "pug");
 app.use(morgan("dev"));
 app.use("/public", express.static(path.join(__dirname, "public")));
