@@ -8,6 +8,8 @@ const app = express();
 
 const PORT = 4000;
 
+const test = "aaa"
+
 app.set("view engine", "pug");
 app.use(morgan("dev"));
 app.use("/public", express.static(path.join(__dirname, "public")));
