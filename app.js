@@ -18,15 +18,19 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.render("screens/index");
+  res.render("screens/main");
 });
 
-app.get("/company", (req, res) => {
-  res.render("screens/company");
+app.get("/besiness", (req, res) => {
+  res.render("screens/besiness");
 });
 
-app.get("/question", (req, res) => {
-  res.render("screens/question");
+app.get("/custome", (req, res) => {
+  res.render("screens/custome");
+});
+
+app.get("/support", (req, res) => {
+  res.render("screens/support");
 });
 
 app.listen(PORT, () => {
