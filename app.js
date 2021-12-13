@@ -4,8 +4,6 @@ dotenv.config();
 const morgan = require(`morgan`);
 const path = require("path");
 
-// modify test
-
 const app = express();
 
 const PORT = 4000;
