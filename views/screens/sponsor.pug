@@ -10,10 +10,10 @@ block content
                 div.sponsor_type
                     div
                         p 후원 방식
-                    input(type="radio" id="routine")
+                    input(type="radio" id="routine" name="sponsorship_type")
                     label(for="routine") 
                         p 정기 후원 
-                    input(type="radio" id="temporary")
+                    input(type="radio" id="temporary" name="sponsorship_type")
                     label(for="temporary") 
                         p 일시 후원 
                 div.sponsor_name
@@ -25,7 +25,7 @@ block content
                 div.sponsor_block
                     div.sponsor_money
                         p 금액
-                        input(type="text")
+                        input(type="text" placeholder="금액")
                     div.sponsor_won
                         p 원
                 div.sponsor_submit 
