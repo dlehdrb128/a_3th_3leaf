@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./test.css";
 @import "./support.css";
+@import "./sponsor.css";
 
 .test {
   color: red;

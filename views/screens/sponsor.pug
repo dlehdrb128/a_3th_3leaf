@@ -1,0 +1,34 @@
+extends ../layout/clientLayout.pug
+
+block content 
+    div.sponsor
+        section.sponsor_title 
+            p 후원하기
+
+        section.sponsor_container
+            form
+                div.sponsor_type
+                    div
+                        p 후원 방식
+                    input(type="radio" id="routine")
+                    label(for="routine") 
+                        p 정기 후원 
+                    input(type="radio" id="temporary")
+                    label(for="temporary") 
+                        p 일시 후원 
+                div.sponsor_name
+                    p 성함
+                    input(type="text" placeholder="성함")
+                div.sponsor_phone
+                    p 연락처
+                    input(type="text" placeholder="연락처")
+                div.sponsor_block
+                    div.sponsor_money
+                        p 금액
+                        input(type="text")
+                    div.sponsor_won
+                        p 원
+                div.sponsor_submit 
+                    input(type="submit" value="후원하기")
+
+               
