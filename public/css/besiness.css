@@ -2,9 +2,9 @@
 @import url(./reset.css);
 
 
-.beiness {
+.besiness {
   width: 1350px;
-  height: 1307px;
+  height: 2742px;
   margin-left: 285px;
   cursor: default;
 
@@ -15,7 +15,7 @@
 }
 
 
-.beiness-head {
+.besiness-head {
     color: #55B569;
     display: flex;
     justify-content: center;
@@ -25,13 +25,62 @@
     padding-bottom: 60px;
 }
 
-.beiness-img1 {
+.besiness-top-img-box{
     display: flex;
-    vertical-align:middle;
 }
 
-.beiness-img1-atag{
+.besiness-top-img {
     display: flex;
-    justify-content: right;
+    vertical-align:middle;
+    padding-right: 100px;
+    
+}
+
+.besiness-top-img-text{
+    display: flex;
+    justify-content: center;
     align-items: center;
+    font-size: 24px;
+    
+}
+
+.besiness-middle-img-box {
+    display: flex;
+    margin-top: 100px;
+}
+
+.besiness-middle-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 164px;
+}
+
+.besiness-middle-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.besiness-green-line{
+    border: 3px solid #55B569;
+    width: 25px;
+    height: 0px;
+    background-color: #55B569;
+    margin-bottom: 22px;
+}
+.besiness-bottom-text-title {
+    font-size: 30px;
+    
+}
+.besiness-bottom-text{
+    font-size: 30px;
+    color: #55B569;
+    margin-top: 50px;
+    margin-bottom: 26px;
+}
+.besiness-bottom-last-text{
+    font-size: 22px;
+    margin-bottom: 50px;
 }
