@@ -35,6 +35,10 @@ app.get("/sponsor", (req, res) => {
   res.render("screens/sponsor");
 });
 
+app.get("/volunteer", (req,res)=> {
+  res.render("screens/volunteer")
+});
+
 app.listen(PORT, () => {
   console.log(`${PORT} Express WEB Application Start!`);
 });
