@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+KR:wght@100;500&display=swap');
+@import url(./reset.css);
+
+.volunteer{
+    height: 1527px;
+    width: 1350px;
+    margin-left: 285px; 
+    cursor: default;
+
+  
+    font-family: 'Architects Daughter', 'Noto Sans Korean' ;
+    font-family: 'Noto Sans KR', sans-serif;   
+}
+
+
+.volunteer-head {
+    font-size: 30px;
+    color: #55B569;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.volunteer-box {
+    background-color: #ffff;
+    width: 980px;
+    height: 616px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 187px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0,0.2);
+}
+
+.volunteer-box input[type="text"]::placeholder{
+    color: #BFBFBF;
+}
+
+.volunteer-name a,.volunteer-title a,.volunteer-main_text a {
+    
+    padding-right: 100px;
+}
+
+
+.volunteer-numder a{
+    padding-right: 80px;
+}
+
+.volunteer-name ,.volunteer-title ,.volunteer-main_text, .volunteer-numder{
+    margin-bottom: 12px;
+}
+
+.volunteer-title{
+    position: relative;
+}
+
+.volunteer-main_text a{
+    position: absolute;
+}
+
+.volunteer-main_text input{
+    width: 550px;
+    height: 170px;
+    font-size: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+    border: 1px solid #E2E2E2 ;
+    
+}
+
+.volunteer-name input,.volunteer-title input, .volunteer-numder input{
+    font-size: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 60px;
+    border: 1px solid #E2E2E2 ;
+   
+} 
+.volunteer-support_button input{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #fff;
+    border: 2px solid #55B569;
+    color: #55B569;
+}
+
+.volunteer-support_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+input:focus{
+    outline:none;
+}
+
