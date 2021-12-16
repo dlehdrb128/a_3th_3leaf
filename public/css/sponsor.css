@@ -1,0 +1,164 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 메인컬러 #9AD2A5 #55B569 폰트컬러 #242925 */
+
+.sponsor {
+  width: 1350px;
+  height: 818px;
+  margin-left: 285px;
+  cursor: default;
+
+  color: #242925;
+}
+
+.sponsor_title {
+  padding-top: 70px;
+  padding-bottom: 62px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #55b569;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.sponsor_container {
+  width: 980px;
+  height: 546px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  margin-left: 183px;
+  padding-top: 117px;
+  padding-left: 260px;
+  padding-bottom: 60px;
+  font-size: 20px;
+}
+
+.sponsor_type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: initial;
+}
+
+.sponsor_type div {
+  padding-right: 53px;
+}
+
+.sponsor_type label:nth-child(3) {
+  padding-right: 50px;
+}
+
+.sponsor_type input[type="radio"] {
+  position: absolute;
+  left: -3000%;
+}
+
+.sponsor_type input[type="radio"] + label {
+  position: relative;
+  cursor: pointer;
+}
+
+.sponsor_type input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #bfbfbf;
+  border-radius: 100%;
+}
+
+.sponsor_type input[type="radio"]:checked + label::after {
+  content: "";
+  background: #55b569;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #55b569;
+  border-radius: 100%;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+}
+
+.sponsor_type label {
+  font-size: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: initial;
+}
+
+.sponsor_type label p {
+  padding-left: 5px;
+}
+
+:is(.sponsor_name, .sponsor_phone, .sponsor_money) {
+  display: flex;
+  width: 440px;
+  height: 60;
+  margin-bottom: 12px;
+}
+
+:is(.sponsor_name, .sponsor_phone, .sponsor_money) p {
+  width: 140px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: initial;
+}
+
+.sponsor_name {
+  margin-top: 27px;
+}
+
+.sponsor_container input[type="text"] {
+  width: 300px;
+  height: 60px;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  font-size: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.sponsor_container input[type="text"]::placeholder {
+  font-size: 20px;
+  color: #bfbfbf;
+}
+
+.sponsor_block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: initial;
+}
+
+.sponsor_won {
+  padding-left: 5px;
+  padding-bottom: 16px;
+}
+
+.sponsor_submit {
+  margin-top: 60px;
+  margin-left: 157px;
+}
+
+.sponsor_submit input {
+  width: 150px;
+  height: 50px;
+  border: 1px solid #55b569;
+  background: none;
+  color: #55b569;
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}

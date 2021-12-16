@@ -1,0 +1,23 @@
+extends ../layout/clientLayout.pug
+ 
+
+block content
+    section.volunteer  
+                .volunteer-head
+                    a 자원봉사자 지원
+                .volunteer-box
+                    form(action="")   
+                        .volunteer-name
+                            a 성함
+                            input(type="text"  placeholder="홍길동" )
+                        .volunteer-numder
+                            a 연락처
+                            input(type="text" placeholder="연락처")
+                        .volunteer-title
+                            a 제목
+                            input(type="text" placeholder="제목")
+                        .volunteer-main_text
+                            a 본문
+                            input(type="text" placeholder="본문내용")
+                        .volunteer-support_button
+                            input(type="submit" value="지원하기") 

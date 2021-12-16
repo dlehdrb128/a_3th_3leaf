@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+KR:wght@100;500&display=swap');
+@import url(./reset.css);
+
+
+.besiness {
+  width: 1350px;
+  height: 2742px;
+  margin: 0px 285px;
+  cursor: default;
+
+  
+  font-family: 'Architects Daughter', 'Noto Sans Korean' ;
+  font-family: 'Noto Sans KR', sans-serif;
+  
+}
+
+
+.besiness-head {
+    color: #55B569;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.besiness-top-img-box{
+    display: flex;
+}
+
+.besiness-top-img {
+    display: flex;
+    vertical-align:middle;
+    padding-right: 100px;
+    
+}
+
+.besiness-top-img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    
+}
+
+.besiness-middle-img-box {
+    display: flex;
+    margin-top: 100px;
+}
+
+.besiness-middle-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 164px;
+}
+
+.besiness-middle-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.besiness-green-line{
+    border: 3px solid #55B569;
+    width: 25px;
+    height: 0px;
+    background-color: #55B569;
+    margin-bottom: 22px;
+}
+.besiness-bottom-text-title {
+    font-size: 30px;
+    
+}
+.besiness-bottom-text{
+    font-size: 30px;
+    color: #55B569;
+    margin-top: 50px;
+    margin-bottom: 26px;
+}
+.besiness-bottom-last-text{
+    font-size: 22px;
+    margin-bottom: 50px;
+}

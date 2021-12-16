@@ -1,0 +1,128 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 메인컬러 #9AD2A5 #55B569 폰트컬러 #242925 */
+
+.support {
+  width: 1350px;
+  height: 1307px;
+  margin-left: 285px;
+  cursor: default;
+
+  color: #242925;
+}
+
+.support_title {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #55b569;
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.support_donation {
+  width: 100%;
+  height: 360px;
+
+  display: flex;
+}
+
+.support_donation_left {
+  width: 570px;
+  border: 1px solid #bfbfbf;
+}
+
+.support_donation_right {
+  width: calc(100% - 570px);
+}
+
+.support_donation_title {
+  padding-top: 54px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.support_donation_content {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  line-height: 34px;
+}
+
+.support_donation_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.support_donation_form input {
+  width: 150px;
+  height: 50px;
+  border: none;
+
+  background-color: #55b569;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.support_use {
+  padding-top: 100px;
+}
+
+.support_use_line {
+  width: 25px;
+  height: 0px;
+  border: 3px solid #55b569;
+  background-color: #55b569;
+}
+
+.support_use_title {
+  padding-top: 22px;
+  padding-bottom: 48px;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.support_use_section {
+  width: 100%;
+  height: 464px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.support_use_section div {
+  width: 400px;
+}
+
+.support_use_section_img {
+  height: 300px;
+}
+
+.support_use_section_title {
+  padding-top: 22px;
+  padding-bottom: 14px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.support_use_section_content {
+  font-size: 20px;
+  line-height: 34px;
+}
