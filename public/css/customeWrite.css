@@ -1,0 +1,68 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.customeWriteContainer {
+  width: 1000px;
+  margin-left: 460px;
+}
+
+.customeWriteContainer__Title {
+  margin-top: 100px;
+  height: 60px;
+  font-size: 18px;
+  background-color: #9ad2a5;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.customeWriteContainer__Title span:not(span:nth-child(1)) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.customeWriteContainer__Title span:first-child {
+  margin-left: 20px;
+  width: 730px;
+}
+
+.customeWriteContainer__Title span:nth-child(2) {
+  width: 120px;
+}
+
+.customeWriteContainer__Title span:last-child {
+  width: 150px;
+}
+
+#customeWriteContainer__Btn {
+  margin-left: 425px;
+  margin-top: 60px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+
+  background-color: #fff;
+  color: #55b569;
+  border: 1px solid #55b569;
+}
+
+.customeWriteContainer__Maintext {
+  width: 1000px;
+  height: 400px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.customeWriteContainer__Maintext::placeholder {
+  font-size: 16px;
+  color: red;
+}

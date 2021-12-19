@@ -8,7 +8,6 @@ const app = express();
 
 const PORT = 4000;
 
-
 app.set("view engine", "pug");
 app.use(morgan("dev"));
 app.use("/public", express.static(path.join(__dirname, "public")));
@@ -31,12 +30,16 @@ app.get("/support", (req, res) => {
   res.render("screens/support");
 });
 
+app.get("/customeWrite", (req, res) => {
+  res.render("screens/customeWrite");
+});
+
 app.get("/sponsor", (req, res) => {
   res.render("screens/sponsor");
 });
 
-app.get("/volunteer", (req,res)=> {
-  res.render("screens/volunteer")
+app.get("/volunteer", (req, res) => {
+  res.render("screens/volunteer");
 });
 
 app.listen(PORT, () => {
