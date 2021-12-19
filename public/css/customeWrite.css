@@ -64,4 +64,5 @@
 
 .customeWriteContainer__Maintext::placeholder {
   font-size: 16px;
+  color: red;
 }

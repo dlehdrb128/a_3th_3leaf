@@ -31,6 +31,7 @@ app.get("/support", (req, res) => {
   res.render("screens/support");
 });
 
+<<<<<<< HEAD
 
 
 
@@ -45,6 +46,15 @@ app.get("/customeWrite", (req, res) => {
 
 
 
+=======
+app.get("/sponsor", (req, res) => {
+  res.render("screens/sponsor");
+});
+
+app.get("/volunteer", (req,res)=> {
+  res.render("screens/volunteer")
+});
+>>>>>>> refs/remotes/origin/master
 
 app.listen(PORT, () => {
   console.log(`${PORT} Express WEB Application Start!`);
