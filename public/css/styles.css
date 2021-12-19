@@ -1,9 +1,19 @@
 @import "./reset.css";
 @import "./test.css";
+<<<<<<< HEAD
+@import "./custome.css";
+@import "./customeWrite.css";
+
+=======
 @import "./support.css";
 @import "./sponsor.css";
 @import "./besiness.css";
 @import "./volunteer.css";
+>>>>>>> refs/remotes/origin/master
 .test {
   color: red;
+}
+
+body {
+  font-family: "Nanum Myeongjo", serif;
 }
