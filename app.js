@@ -31,6 +31,22 @@ app.get("/support", (req, res) => {
   res.render("screens/support");
 });
 
+
+
+
+
+
+
+
+
+app.get("/customeWrite", (req, res) => {
+  res.render("screens/customeWrite");
+});
+
+
+
+
 app.listen(PORT, () => {
   console.log(`${PORT} Express WEB Application Start!`);
 });
+

@@ -1,5 +1,7 @@
 @import "./reset.css";
 @import "./test.css";
+@import "./custome.css";
+@import "./customeWrite.css";
 
 .test {
   color: red;
