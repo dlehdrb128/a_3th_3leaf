@@ -6,26 +6,26 @@ block content
             p 후원하기
 
         section.sponsor_container
-            form
+            form(method="post" action="/SponsorInformation")
                 div.sponsor_type
                     div
                         p 후원 방식
-                    input(type="radio" id="routine" name="sponsorship_type")
+                    input(type="radio" id="routine" name="type" value="정기 후원" checked)
                     label(for="routine") 
                         p 정기 후원 
-                    input(type="radio" id="temporary" name="sponsorship_type")
+                    input(type="radio" id="temporary" name="type" value="일시 후원")
                     label(for="temporary") 
                         p 일시 후원 
                 div.sponsor_name
                     p 성함
-                    input(type="text" placeholder="성함")
+                    input(type="text" name="name" placeholder="성함" required autocomplete="off" spellcheck="false" maxlength="20")
                 div.sponsor_phone
                     p 연락처
-                    input(type="text" placeholder="연락처")
+                    input(type="text" name="phone" placeholder="연락처" required autocomplete="off" spellcheck="false" minlength="9" maxlength="11")
                 div.sponsor_block
                     div.sponsor_money
                         p 금액
-                        input(type="text" placeholder="금액")
+                        input(type="text" name="money" placeholder="금액" required autocomplete="off" spellcheck="false")
                     div.sponsor_won
                         p 원
                 div.sponsor_submit 

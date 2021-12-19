@@ -17,7 +17,6 @@ const db = mysql2.createPool({
   database: process.env.DB_NAME,
 });
 
-console.log(db);
 
 app.set("view engine", "pug");
 app.use(morgan("dev"));
@@ -66,6 +65,36 @@ app.get("/customeWrite", (req, res) => {
 
 app.get("/sponsor", (req, res) => {
   res.render("screens/sponsor");
+});
+
+app.post("/SponsorInformation", (req, res) => {
+  let name = req.body.name;
+  let phone = req.body.phone;
+  let money = req.body.money;
+  let type = req.body.type;
+
+  const sponsorInsertQuery = `
+    INSERT INTO sponsor (type, name, phoneNumber, price, time) VALUES
+    (
+      "${type}",
+      "${name}",
+      "${phone}",
+      "${money}",
+      now()
+    )
+  `;
+  try {
+    db.query(sponsorInsertQuery, (error, rows) => {
+      if(error) {
+        console.error(error);
+        throw Error("failed query");
+      }
+      return res.redirect("/sponsor");
+    })
+  } catch (e) {
+    console.error(e);
+    return res.redirect("/sponsor");
+  }
 });
 
 app.get("/volunteer", (req, res) => {
