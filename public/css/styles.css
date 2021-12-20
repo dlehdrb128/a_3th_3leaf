@@ -7,6 +7,7 @@
 @import "./sponsor.css";
 @import "./besiness.css";
 @import "./volunteer.css";
+@import "./questions.css";
 
 body {
   font-family: "Nanum Myeongjo", serif;

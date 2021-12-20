@@ -101,6 +101,10 @@ app.get("/volunteer", (req, res) => {
   res.render("screens/volunteer");
 });
 
+app.get("/questions", (req, res) => {
+  res.render("screens/questions");
+});
+
 app.listen(PORT, () => {
   console.log(`${PORT} Express WEB Application Start!`);
 });
