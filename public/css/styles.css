@@ -2,15 +2,13 @@
 @import "./test.css";
 @import "./custome.css";
 @import "./customeWrite.css";
+@import "./main.css";
 @import "./support.css";
 @import "./sponsor.css";
 @import "./besiness.css";
 @import "./volunteer.css";
 @import "./questions.css";
-
-.test {
-  color: red;
-}
+@import "./introduce.css";
 
 body {
   font-family: "Nanum Myeongjo", serif;

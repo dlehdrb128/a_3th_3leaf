@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+KR:wght@100;500&display=swap");
+@import url(./reset.css);
+
+.main-box {
+  height: 2532px;
+  width: 1350px;
+  margin-left: 285px;
+  cursor: default;
+
+  font-family: "Architects Daughter", "Noto Sans Korean";
+  font-family: "Noto Sans KR", sans-serif;
+}
+.main-top_img {
+  display: flex;
+  position: relative;
+}
+
+.main-top_img-text-box {
+  position: absolute;
+  bottom: 60px;
+  right: 65px;
+}
+
+.main-top_img-text {
+  display: flex;
+  font-size: 46px;
+  color: #9ad2a5;
+  margin-bottom: 34px;
+}
+
+.min-top_img-middle_text {
+  display: flex;
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-top_img-support_button {
+  display: flex;
+}
+
+.min-top_img-support_button input {
+  font-size: 20px;
+  color: #fff;
+  background-color: #55b569;
+  cursor: pointer;
+  border: 2px solid #55b569;
+}

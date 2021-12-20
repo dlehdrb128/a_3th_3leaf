@@ -3,11 +3,35 @@ extends ../layout/clientLayout.pug
 
 block content
     section
-        each m in mList
-            p #{mList[0].name}
-        
-      
-            
-      
-
-        
+       .main-top_img
+            img(src="public/image/main/banner.png", alt="")
+            .main-top_img-text-box
+                .main-top_img-text        
+                    | 3LEAF와 함께할
+                    br
+                    | 봉사자를 찾습니다.
+                .min-top_img-middle_text
+                    | 해외 및 국내의 불우한 이웃은
+                    br
+                    | 여러분의 도움으로 소중한 기회를 얻어갑니다.
+                .min-top_img-support_button 
+                    input(type="submit", value="후원하기")
+        .main-box
+            .main-middle_img-left
+                img(src="public/image/main/image1.png", alt="")
+                p 국내 후원 
+                p 국내 후원에 대한 설명
+            .main-middle_img-right
+                img(src="public/image/main/image2.png", alt="")
+                p 해외 후원 
+                p 해외 후원에 대한 설명
+            .mian-last_img-box 
+                .mian-last_img-text    
+                    p 국내 · 해외 정기후원
+                    p 매월 약정된 금액으로 후원하는 방법입니다.
+                    p 후원금은 도움이 필요한 아이들을 위해
+                    p 소중히 사용됩니다. 여러분의 도움으로 소외된
+                    p 아이들이 밝고 건강하게 자라납니다.
+                    input(type="submit", value="후원하기")
+                .main-last_img
+                    img(src="public/image/main/image3.png", alt="")
