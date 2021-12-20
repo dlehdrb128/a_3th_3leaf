@@ -67,6 +67,10 @@ app.get("/sponsor", (req, res) => {
   res.render("screens/sponsor");
 });
 
+app.get("/GoSponsor", (req,res) => {
+  res.render("screens/sponsor");
+})
+
 app.post("/SponsorInformation", (req, res) => {
   let name = req.body.name;
   let phone = req.body.phone;
@@ -112,3 +116,5 @@ app.get("/introduce", (req, res) => {
 app.listen(PORT, () => {
   console.log(`${PORT} Express WEB Application Start!`);
 });
+
+

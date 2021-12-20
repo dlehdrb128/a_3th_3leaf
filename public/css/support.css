@@ -8,11 +8,11 @@
 .support {
   width: 1350px;
   height: 1307px;
-  margin-left: 285px;
+  margin: 0 auto;
   cursor: default;
 
   color: #242925;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .support_title {
@@ -75,6 +75,7 @@
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
+  font-family: "Noto Sans KR", sans-serif;
 
   cursor: pointer;
 }
