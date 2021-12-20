@@ -3,9 +3,8 @@
 .sponsor {
   width: 1350px;
   height: 818px;
-  margin-left: 285px;
   cursor: default;
-
+  margin: 0 auto;
   color: #242925;
   font-family: "Noto Sans KR", sans-serif;
 }
