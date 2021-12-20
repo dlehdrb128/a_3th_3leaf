@@ -3,7 +3,7 @@
 .sponsor {
   width: 1350px;
   height: 818px;
-  margin-left: 285px;
+  margin: 0 auto;
   cursor: default;
 
   color: #242925;
