@@ -15,7 +15,7 @@ block content
                     | 소중히 사용됩니다. 여러분의 도움으로 소외된
                     br
                     | 아이들이 밝고 건강하게 자라납니다.
-                form.support_donation_form
+                form(method="get" action="/GoSponsor").support_donation_form
                     input(type="submit" value="후원하기")  
             div.support_donation_right
                 img.support_donation_right_img(src="../../public/image/donate/image1.png")
@@ -49,3 +49,4 @@ block content
                         br
                         | 경우 신속하게 지원합니다.
 
+        script(src="/public/js/support.js") 
