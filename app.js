@@ -105,6 +105,10 @@ app.get("/questions", (req, res) => {
   res.render("screens/questions");
 });
 
+app.get("/introduce", (req, res) => {
+  res.render("screens/introduce");
+});
+
 app.listen(PORT, () => {
   console.log(`${PORT} Express WEB Application Start!`);
 });
