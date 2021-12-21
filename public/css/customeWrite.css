@@ -63,9 +63,9 @@
   border-bottom: 1px solid #bfbfbf;
   resize: none;
   outline: none;
+  padding: 20px;
 }
 
 #customeWriteContainer__Maintext::placeholder {
   font-size: 16px;
-  padding: 20px;
 }
