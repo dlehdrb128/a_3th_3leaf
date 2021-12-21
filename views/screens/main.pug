@@ -3,7 +3,7 @@ extends ../layout/clientLayout.pug
 
 block content
     section
-       .main-top_img
+        .main-top_img
             img(src="public/image/main/banner.png", alt="")
             .main-top_img-text-box
                 .main-top_img-text        
@@ -16,22 +16,43 @@ block content
                     | 여러분의 도움으로 소중한 기회를 얻어갑니다.
                 .min-top_img-support_button 
                     input(type="submit", value="후원하기")
-        .main-box
-            .main-middle_img-left
-                img(src="public/image/main/image1.png", alt="")
-                p 국내 후원 
-                p 국내 후원에 대한 설명
-            .main-middle_img-right
-                img(src="public/image/main/image2.png", alt="")
-                p 해외 후원 
-                p 해외 후원에 대한 설명
-            .mian-last_img-box 
-                .mian-last_img-text    
-                    p 국내 · 해외 정기후원
-                    p 매월 약정된 금액으로 후원하는 방법입니다.
-                    p 후원금은 도움이 필요한 아이들을 위해
-                    p 소중히 사용됩니다. 여러분의 도움으로 소외된
-                    p 아이들이 밝고 건강하게 자라납니다.
-                    input(type="submit", value="후원하기")
+        .main-box-top
+            .main-box
+                .main-middle_img-left
+                    img(src="public/image/main/image1.png", alt="")
+                    a(href="http://localhost:4000/besiness", class="hover_text") 바로가기  
+                    .main-mddie-img_left-text-head 
+                        a 국내 봉사
+                    .main-middle_img_left-text
+                        |  국내 봉사는 저소득가정 아이들이 건강하고 
+                        br
+                        | 행복하게 자랄 수 있도록 생존, 보호, 발달, 참여
+                        br
+                        |  전반에 걸쳐 경제적, 정서적 지원을 합니다
+                .main-middle_img-right
+                    img(src="public/image/main/image2.png", alt="")
+                    a(href="http://localhost:4000/besiness", class="hover_text1") 바로가기
+                    .main-mddie-img_right-text-head 
+                        a 해외 봉사
+                    .main-middle_img_right-text
+                        |  해외 봉사는 해외아동이 가난과 질병의 고통에서
+                        br
+                        | 벗어나 생애주기에 맞추어 건강하게 성장하고,
+                        br
+                        |  어른이 되면 자립할 수 있도록 돕습니다.
+            .main-last_img-box
+                .main-last_img-text-box
+                    .main-last_img-text-head
+                        a 국내 · 해외 정기후원
+                    .main-last_img-text    
+                        |   매월 약정된 금액으로 후원하는 방법입니다.
+                        br  
+                        |   후원금은 도움이 필요한 아이들을 위해
+                        br 
+                        |   소중히 사용됩니다. 여러분의 도움으로 소외된
+                        br  
+                        |   아이들이 밝고 건강하게 자라납니다.
+                    .main-last_support-button
+                        input(type="submit", value="후원하기")
                 .main-last_img
                     img(src="public/image/main/image3.png", alt="")
