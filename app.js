@@ -97,12 +97,12 @@ app.post("/volunteers", (req, res) => {
   let contents = req.body.contents;
 
   const volunteerQuery = `
-    INSERT INTO volunteer (name, mobile, title, contents) VALUES
+    INSERT INTO volunteer (name, mobile, title, contents, createAt) VALUES
     (
-      "${name}"
-      "${mobile}"
-      "${title}"
-      "${contents}"
+      "${name}",
+      "${mobile}",
+      "${title}",
+      "${contents}",
       now()
     )
   `;
