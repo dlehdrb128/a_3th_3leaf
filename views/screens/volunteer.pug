@@ -6,18 +6,19 @@ block content
                 .volunteer-head
                     a 자원봉사자 지원
                 .volunteer-box
-                    form(action="")   
+                    form(method="post" action="/volunteers")   
                         .volunteer-name
                             a 성함
-                            input(type="text"  placeholder="성함" )
+                            input(type="text" name="name"  placeholder="성함" )
                         .volunteer-numder
                             a 연락처
-                            input(type="text" placeholder="연락처")
+                            input(type="text" name="mobile" placeholder="연락처")
                         .volunteer-title
                             a 제목
-                            input(type="text" placeholder="제목")
+                            input(type="text" name="title" placeholder="제목")
                         .volunteer-main_text
                             a 본문
-                            input(type="text" placeholder="본문내용")
+                            input(type="text " name="contents" placeholder="본문내용")
                         .volunteer-support_button
-                            input(type="submit" value="지원하기") 
+                            input(type="submit" value="지원하기")
+                   

@@ -29,22 +29,7 @@ app.use(express.json());
 // });
 
 app.get("/", (req, res) => {
-  const selectQuery = `
-  SELECT  id,
-          name,
-          title
-  FROM 	  volunteer
-  `;
-
-  try {
-    db.query(selectQuery, (error, rows) => {
-      console.log(rows, "rows");
-      res.render("screens/main", { mList: rows });
-    });
-  } catch (error) {
-    console.log(error);
-    console.log("error");
-  }
+  res.render("screens/main");
 });
 
 app.get("/besiness", (req, res) => {
@@ -103,6 +88,38 @@ app.post("/SponsorInformation", (req, res) => {
 
 app.get("/volunteer", (req, res) => {
   res.render("screens/volunteer");
+});
+
+app.post("/volunteers", (req, res) => {
+  let name = req.body.name;
+  let mobile = req.body.mobile;
+  let title = req.body.title;
+  let contents = req.body.contents;
+
+  const volunteerQuery = `
+    INSERT INTO volunteer (name, mobile, title, contents) VALUES
+    (
+      "${name}"
+      "${mobile}"
+      "${title}"
+      "${contents}"
+      now()
+    )
+  `;
+  try {
+    db.query(volunteerQuery, (error, rows)=>{
+      if(error) {
+        console.error(error);
+        throw Error("failed query");
+      }
+      return res.redirect("/volunteer");
+    })
+  } catch(e) {
+    console.error(e);
+    return res.redirect("/volunteer");
+  }
+
+
 });
 
 app.get("/questions", (req, res) => {
