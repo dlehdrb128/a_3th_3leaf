@@ -2,9 +2,9 @@
 @import url(./reset.css);
 
 .volunteer{
-    height: 1527px;
+    height: 827px;
     width: 1350px;
-    margin-left: 285px; 
+    margin: 0 auto; 
     cursor: default;
 
   
@@ -37,31 +37,42 @@
     box-shadow: 0px 0px 20px rgb(0, 0, 0,0.2);
 }
 
-.volunteer-box input[type="text"]::placeholder{
-    color: #BFBFBF;
-}
 
-.volunteer-name a,.volunteer-title a,.volunteer-main_text a {
+
+
+.volunteer-name p,.volunteer-title p,.volunteer-main_text p {
     padding-right: 100px;
     font-size: 20px;
+    display: flex;
 }
-
-
-.volunteer-numder a{
+.volunteer-main_text p{
+    margin-top: 20px;
+}
+.volunteer-numder p{
     padding-right: 80px;
     font-size: 20px;
+    display: flex;
+    
 }
 
-.volunteer-name ,.volunteer-title ,.volunteer-main_text, .volunteer-numder{
+.volunteer-name ,.volunteer-title , .volunteer-numder{
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.volunteer-main_text {
+    display: flex;
+    margin-bottom: 60px;
 }
 
 .volunteer-title{
     position: relative;
 }
 
-.volunteer-main_text a{
+.volunteer-main_text p{
     position: absolute;
+    display: flex;
 }
 
 .volunteer-main_text input{
@@ -71,6 +82,9 @@
     margin-left: 140px;
     border-radius: 20px;
     border: 1px solid #E2E2E2 ;
+    padding-left: 20px;
+    padding-top: 17px;
+    padding-bottom: 126px;
 }
 
 
@@ -81,6 +95,9 @@
     width: 300px;
     height: 60px;
     border: 1px solid #E2E2E2 ; 
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 17px;
 } 
 .volunteer-support_button input{
     width: 150px;
@@ -115,5 +132,4 @@
 input:focus{
     outline:none;
 }
-
 

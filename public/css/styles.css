@@ -8,6 +8,7 @@
 @import "./besiness.css";
 @import "./volunteer.css";
 @import "./questions.css";
+@import "./introduce.css";
 
 body {
   font-family: "Noto Sans KR", sans-serif;
