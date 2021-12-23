@@ -1,0 +1,33 @@
+@import url(./reset.css);
+
+body{
+} 
+footer {
+    height: 260px;
+    background-color: #242925;
+    margin: 0 auto;
+}
+.footer_content {
+    width: 1350px;
+    padding-top: 45px;
+}
+.text_footer {
+    float: left;
+}
+
+.text_footer h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.text_footer p {
+    color: white;
+    font-size: 16px;
+    padding-top : 10px;
+}
+
+.logo_footer {
+    float: right;
+}
