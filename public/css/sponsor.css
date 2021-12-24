@@ -31,7 +31,7 @@
   height: 546px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-  margin-left: 183px;
+  margin: 0 auto;
   padding-top: 117px;
   padding-left: 260px;
   padding-bottom: 60px;
@@ -169,9 +169,4 @@
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
-}
-
-.account__hidden {
-  height: 0;
-  overflow: hidden;
 }
