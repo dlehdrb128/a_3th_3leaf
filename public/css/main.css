@@ -25,7 +25,7 @@
     display: flex;
     position: relative;
     margin: auto;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     width: 1920px;
 }
 
@@ -39,14 +39,14 @@
 .main-top_img-text{
     font-size: 46px;
     color: #9AD2A5;
-    margin-bottom: 34px;
+    padding-bottom: 34px;
     
 }
 
 .main-top_img-middle_text{
     font-size: 18px;
     color: #fff;
-    margin-bottom: 73px;
+    padding-bottom: 73px;
 }
 
 
@@ -65,14 +65,14 @@
     background-color: black;
 }
 .main-middle_img-left {
-    margin-right: 150px;
+    margin: auto;
     z-index: 20;
 }
 
 
-.main-middle_img-left:hover .hover_text, .main-middle_img-right:hover .hover_text1 {
+.middle_img_left-hover_box:hover .hover_text, .middle_img_right-hover_box:hover .hover_text1 {
     opacity: 1;
-    transition: filter 1s;
+
 }
 
 .main-middle_img-left img:hover, .main-middle_img-right img:hover {
@@ -81,10 +81,14 @@
     color: #fff;
 }
 
+.main-middle_img-left-text:hover .hover_text{
+    opacity: 0;
+}
+
 .hover_text{
     position: absolute  ;
     top: 250px;
-    left: 250px;
+    left: 320px;
     color: #fff;
     font-size: 32px;
     opacity: 0;
