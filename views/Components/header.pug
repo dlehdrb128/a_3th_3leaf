@@ -1,36 +1,33 @@
 doctype html
 html(lang="en")
     head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="../../public/css/header.css") 
     body 
         header 
             .logo 
                 img(src="../../public/image/logo/logo.png", alt="logo")
             .menu__header
-                .submenu_back
                 .menu 
                     a(href="#") 회사소개
-                .menu
                     a(href="#") 사업안내
-                        .submenu__header                     
-                            div
-                                a(href="/besuiness") 국내 · 해외 봉사
-                            div
-                                a(href="#") 자원봉사자 지원
-                .menu
-                    a(href="#") 후원안내
-                        .submenu__header
-                            div
-                                a(href="#") 국내 · 해외 사업
-                            div
-                                a(href="#") 후원하기
-                .menu
+                    a(href="#") 후원안내        
                     a(href="#") 고객센터
-                        .submenu__header
-                            div
-                                a(href="#") 공지사항
-                            div
-                                a(href="#") 자주묻는질문
-                
+
+                .submenu              
+                    ul 
+                        li
+                            a(href="/besuiness") 국내 · 해외 봉사
+                            a(href="#") 자원봉사자 지원
+                        li 
+                            a(href="#") 국내 · 해외 사업
+                            a(href="#") 후원하기
+                        li 
+                            a(href="#") 공지사항
+
+                            a(href="#") 자주묻는질문
+        
                 
                     

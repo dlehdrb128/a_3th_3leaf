@@ -8,6 +8,9 @@
   margin: 0 auto;
   color: #242925;
   font-family: "Noto Sans KR", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .sponsor_title {
@@ -28,7 +31,7 @@
   height: 546px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
-  margin-left: 183px;
+  margin: 0 auto;
   padding-top: 117px;
   padding-left: 260px;
   padding-bottom: 60px;
@@ -43,7 +46,8 @@
 }
 
 .sponsor_type div {
-  padding-right: 53px;
+  width: 85px;
+  margin-right: 53px;
 }
 
 .sponsor_type label:nth-child(3) {
