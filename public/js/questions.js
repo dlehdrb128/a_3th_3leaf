@@ -1,6 +1,7 @@
 let list = document.getElementsByClassName("questions__list");
 let btn = document.getElementsByClassName("questions__list__btn");
 
+
 function accordion() {
     let listClass = this.parentNode.className;
     console.log(listClass)
@@ -16,3 +17,4 @@ for(let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("click", accordion);
     console.log(btn[i]);
 }
+

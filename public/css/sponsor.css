@@ -8,6 +8,9 @@
   margin: 0 auto;
   color: #242925;
   font-family: "Noto Sans KR", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .sponsor_title {
@@ -43,7 +46,8 @@
 }
 
 .sponsor_type div {
-  padding-right: 53px;
+  width: 85px;
+  margin-right: 53px;
 }
 
 .sponsor_type label:nth-child(3) {
@@ -165,4 +169,9 @@
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
+}
+
+.account__hidden {
+  height: 0;
+  overflow: hidden;
 }

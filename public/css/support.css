@@ -13,6 +13,9 @@
 
   color: #242925;
   font-family: "Noto Sans KR", sans-serif;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .support_title {
