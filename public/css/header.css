@@ -14,7 +14,10 @@ header {
 }
 
 .logo {
+    height: 80px;
   float: left;
+  display: inline;
+  vertical-align: middle;
 }
 
 .menu__header {
@@ -26,6 +29,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 
+  z-index: 999;
   position: relative;
 }
 
@@ -34,7 +38,7 @@ header {
     height: 140px;
     background-color: yellow;
     position: absolute;
-
+    z-index: 2;
     top: 80px;
     left: 0;
     opacity: 0;
