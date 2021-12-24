@@ -1,32 +1,102 @@
 @import url(./reset.css);
 
-
 header {
-    width: 1350px;
-    height: 80px;
-    background-color: wheat;
-
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .menu {
     width: 1350px;
     height: 80px;
-
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+
 }
-
-
-.menu__header {
+.nav ul {
     display: flex;
-    flex-direction: row-reverse;
 }
-
+.nav ul li {
+    width: 140px;
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
 
 .submenu {
-    display: none;
+    position: absolute;
+    width: 1920px;
+    height: 120px;
+    background-color: white;
+    left: 0;
+
+    z-index: 9999;
+    display: flex;
+
+    opacity: 0;
+}
+
+.submenu__nav {
+    width: 1350px;
+    margin-left: 285px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+.submenu__nav ul {
+    display: flex;
+}
+.submenu__nav ul li {
+    width: 140px;
+    height: 60px;
+    padding-top: -20px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submenu__nav ul li a:last-child {
+    padding-top: 30px;
+}
+
+
+.menu__header:hover .submenu {
+    opacity: 100;
+  
+    transition: 1s;
+}
+
+.menu__header:not(:hover) .submenu {
+    opacity: 0;
+  
+    transition: 1s;
+}
+li {
+    padding: 30px;
+}
+a {
+    display: block;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.menu__header .nav ul li:hover{
+    border-bottom: solid 1px #55b569;
+    z-index: 99999;
+}
+
+.submenu__nav ul li a:nth-child(2n):hover + .menu__header .nav ul li:nth-child(2n){
+    border-bottom: solid 3px #55b569;
+    z-index: 999999;
+    transition: 0.8s;
 }
