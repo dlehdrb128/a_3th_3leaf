@@ -1,25 +1,31 @@
 @import url(./reset.css);
 
+
 header {
     width: 1350px;
     height: 80px;
+    background-color: wheat;
 
-    margin: 0 auto;
-}
-
-.logo {
-    float: left;
-
-}
-
-.menu__header {
-    
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
+    width: 1350px;
+    height: 80px;
 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+
+.menu__header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 .submenu {
     display: none;
