@@ -24,9 +24,6 @@ app.use("/public", express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.get("/", (req, res) => {
-//   res.render("screens/main");
-// });
 
 app.get("/", (req, res) => {
   res.render("screens/main");
@@ -35,29 +32,7 @@ app.get("/", (req, res) => {
 app.get("/besiness", (req, res) => {
   res.render("screens/besiness");
 });
-/*
-app.get("/custome", (req, res) => {
-  const customeSelect =`
-    SELECT  id,
-            title,
-            content,
-            createAt
-      FROM  custome          
-    ORDER BY createAt DESC
-  `;
-  console.log(customeSelect);
-  try {
-    db.query(customeSelect, (error, rows) => {
-      console.log(error);
-      console.log(rows);
 
-      res.render("screens/custome", {aContent : rows});
-    })
-  } catch(e) {
-    console.error(e);
-  }
-});
-*/
 app.get("/custome", (req,res) => {
   const customeSelect =`
     SELECT  id,
@@ -68,11 +43,11 @@ app.get("/custome", (req,res) => {
     ORDER BY id DESC   
   `;
 
-  console.log(customeSelect);
+  
   try {
     db.query(customeSelect, (error, rows) => {
       console.log(error);
-      console.log(rows);
+      
 
       res.render("screens/custome", {mContent : rows});
     })
