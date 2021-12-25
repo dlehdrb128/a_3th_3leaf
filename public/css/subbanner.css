@@ -1,0 +1,8 @@
+@import url(./reset.css);
+
+
+div {
+    width: 1920px;
+    display: flex;
+    text-align: center;
+}

@@ -93,14 +93,7 @@ a:hover {
   z-index: 99999;
 }
 
-.submenu__nav
-  ul
-  li
-  a:nth-child(2n):hover
-  + .menu__header
-  .nav
-  ul
-  li:nth-child(2n) {
+.submenu__nav ul li a:nth-child(2n):hover + .nav ul li a:nth-child(2n) {
   border-bottom: solid 3px #55b569;
   z-index: 999999;
   transition: 0.8s;
