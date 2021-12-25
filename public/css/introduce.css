@@ -4,8 +4,16 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.introduce {
+  width: 1350px;
+  height: 1296px;
+  margin: 0 auto;
+
+  margin-bottom: 100px;
+  margin-top: 70px;
+}
+
 .introduce__Title {
-  padding-top: 70px;
   padding-bottom: 60px;
   font-size: 30px;
   font-weight: bold;
@@ -18,8 +26,52 @@
 }
 
 .introduces__Introduce {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduce__picture {
+  width: 600px;
+  height: 500px;
+}
+
+.intriduce__Content {
+  margin: 0px;
+  font-size: 24px;
+  margin-right: 95px;
+}
+
+.introduceDonationList__Title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.introduceDonationList__SponserPicture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.introduceDonationList__Information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 245px;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.introduceDonationList__Name {
+  font-weight: bold;
+  margin-top: 10px;
 }

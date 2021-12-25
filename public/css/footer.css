@@ -1,44 +1,45 @@
 @import url(./reset.css);
 
-body{
-    width: 1920px;
-} 
+body {
+  width: 1920px;
+}
 footer {
-    height: 260px;
-    background-color: #242925;
-    margin: 0 auto;}
-.footer_content {
-    width: 1350px;
-    height: 260px;
-    padding-top: 45px;
-    margin: 0 auto;
-    
-    position: relative;
+  height: 260px;
+  background-color: #242925;
+  margin: 0 auto;
+}
 
+.footer_content {
+  width: 1350px;
+  height: 260px;
+  padding-top: 45px;
+  margin: 0 auto;
+
+  position: relative;
 }
 .text_footer {
-    float: left;
+  float: left;
 }
 
 .text_footer h1 {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    padding-bottom: 24px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 24px;
 }
 
 .text_footer p {
-    color: white;
-    font-size: 16px;
-    padding-top : 10px;
+  color: white;
+  font-size: 16px;
+  padding-top: 10px;
 }
 .text_footer div {
-    padding-top: 17px;
-    color: #838784;
+  padding-top: 17px;
+  color: #838784;
 }
 
 .logo_footer {
-    position: absolute;
-    right: 0;
-    bottom: 45px;
+  position: absolute;
+  right: 0;
+  bottom: 45px;
 }

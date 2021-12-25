@@ -35,9 +35,50 @@ app.get("/", (req, res) => {
 app.get("/besiness", (req, res) => {
   res.render("screens/besiness");
 });
-
+/*
 app.get("/custome", (req, res) => {
-  res.render("screens/custome");
+  const customeSelect =`
+    SELECT  id,
+            title,
+            content,
+            createAt
+      FROM  custome          
+    ORDER BY createAt DESC
+  `;
+  console.log(customeSelect);
+  try {
+    db.query(customeSelect, (error, rows) => {
+      console.log(error);
+      console.log(rows);
+
+      res.render("screens/custome", {aContent : rows});
+    })
+  } catch(e) {
+    console.error(e);
+  }
+});
+*/
+app.get("/custome", (req,res) => {
+  const customeSelect =`
+    SELECT  id,
+            title,
+            DATE_FORMAT(createAt, "%Y.%m.%d") AS createAt,
+            DATE_FORMAT(updateAt, "%Y.%m.%d") AS updateAt
+      FROM  custome
+    ORDER BY id DESC   
+  `;
+
+  console.log(customeSelect);
+  try {
+    db.query(customeSelect, (error, rows) => {
+      console.log(error);
+      console.log(rows);
+
+      res.render("screens/custome", {mContent : rows});
+    })
+  } catch(error) {
+    console.error(error);
+  }
 });
 
 app.get("/support", (req, res) => {
@@ -46,6 +87,33 @@ app.get("/support", (req, res) => {
 
 app.get("/customeWrite", (req, res) => {
   res.render("screens/customeWrite");
+});
+
+app.post("/customeForm", (req, res) => {
+  let title = req.body.title;
+  let content = req.body.content;
+
+  const customeInsert = `
+    INSERT INTO custome (title, content, createAt, updateAt ) VALUES 
+    (
+      "${title}",
+      "${content}",
+      now(),
+      now()
+    )
+  `;
+  try {
+    db.query(customeInsert, (error, rows) => {
+      if(error) {
+        console.error(error);
+        throw Error("failed query");
+      }
+      return res.redirect("/custome");
+    })
+  } catch (e) {
+    console.error(e);
+    return res.redirect("/customeWrite");
+  }
 });
 
 app.get("/sponsor", (req, res) => {

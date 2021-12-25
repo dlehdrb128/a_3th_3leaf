@@ -3,49 +3,41 @@
 .notosanskr * {
   font-family: "Noto Sans KR", sans-serif;
 }
+.customeWrite {
+  width: 1350px;
+  height: 670px;
+  cursor: default;
+  margin: 0 auto;
+}
 
 .customeWriteContainer {
   width: 1000px;
-  margin-left: 460px;
+  margin-left: 175px;
 }
 
-.customeWriteContainer__Title {
+.customeWriteContainer input:first-child {
+  width: 100%;
   margin-top: 100px;
   height: 60px;
   font-size: 18px;
   background-color: #9ad2a5;
   color: #fff;
+  padding: 20px;
   border-radius: 20px;
   font-size: 16px;
+  border: none;
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
 }
 
-.customeWriteContainer__Title span:not(span:nth-child(1)) {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.customeWriteContainer__Title span:first-child {
-  margin-left: 20px;
-  width: 730px;
-}
-
-.customeWriteContainer__Title span:nth-child(2) {
-  width: 120px;
-}
-
-.customeWriteContainer__Title span:last-child {
-  width: 150px;
+.customeWriteContainer input:first-child::placeholder {
+  color: #fff;
 }
 
 #customeWriteContainer__Btn {
-  margin-left: 425px;
+  margin: 0 auto;
   margin-top: 60px;
   width: 150px;
   height: 50px;
@@ -54,6 +46,9 @@
   background-color: #fff;
   color: #55b569;
   border: 1px solid #55b569;
+
+  display: flex;
+  justify-content: center;
 }
 
 #customeWriteContainer__Maintext {

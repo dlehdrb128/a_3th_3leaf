@@ -4,6 +4,12 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.custome {
+  width: 1350px;
+  height: 1019px;
+  margin: 0 auto;
+}
+
 .customeTitle {
   padding-top: 70px;
   padding-bottom: 60px;
@@ -19,7 +25,7 @@
 
 .customeContainer {
   width: 1000px;
-  margin-left: 460px;
+  margin: 0 auto;
 }
 
 .customeContainer__box {

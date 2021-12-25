@@ -2,16 +2,10 @@ extends ../layout/clientLayout.pug
 
 block content
 
-    section.customeWriteContainer
-        form
-            div.customeWriteContainer__box
-                div.customeWriteContainer__Title
-                    span 제목
-                    span 관리자
-                    span 21.12.13
-
-                textarea(type="textarea" placeholder="본문" id="customeWriteContainer__Maintext" required)
-
-            input(type="submit" value="목록으로" id="customeWriteContainer__Btn")
-                
+    section.customeWrite
+        section.customeWriteContainer
+            form(action="/customeForm" method="post")
+                input(type="text" name="title" placeholder="제목")
+                textarea(type="textarea" name="content" placeholder="본문"  id="customeWriteContainer__Maintext" required)
+                input(type="submit" value="작성하기" id="customeWriteContainer__Btn")
         
