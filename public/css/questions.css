@@ -1,3 +1,14 @@
+
+.subbanner__coms {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../public/image/subbanner/consulting.png');
+  position: relative;
+}
+
 .questions {
   width: 1350px;
   margin: 0 auto;

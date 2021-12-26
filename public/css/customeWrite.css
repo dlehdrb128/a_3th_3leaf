@@ -3,6 +3,17 @@
 .notosanskr * {
   font-family: "Noto Sans KR", sans-serif;
 }
+
+.subbanner__coms {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../public/image/subbanner/consulting.png');
+  position: relative;
+}
+
 .customeWrite {
   width: 1350px;
   height: 670px;

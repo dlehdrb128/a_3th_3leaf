@@ -1,5 +1,16 @@
 /* 메인컬러 #9AD2A5 #55B569 폰트컬러 #242925 */
 
+.subbanner__s {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../public/image/subbanner/donate.png);
+  position: relative;
+}
+
+
 .sponsor {
   width: 1350px;
   height: 818px;

@@ -4,6 +4,16 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+.subbanner__coms {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../public/image/subbanner/consulting.png");
+  position: relative;
+}
+
 .custome {
   width: 1350px;
   height: 1019px;
@@ -86,26 +96,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.customeContainer__list p:nth-child(1) {
-  width: 80px;
-}
-
-.customeContainer__list p:nth-child(2) {
-  width: 500px;
-}
-
-.customeContainer__list p:nth-child(3) {
-  width: 120px;
-}
-
-.customeContainer__list p:nth-child(4) {
-  width: 150px;
-}
-
-.customeContainer__list p:nth-child(5) {
-  width: 150px;
 }
 
 .customePageNumber {
