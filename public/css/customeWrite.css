@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../../public/image/subbanner/consulting.png');
+  background-image: url("../../public/image/subbanner/consulting.png");
   position: relative;
 }
 
@@ -60,6 +60,14 @@
 
   display: flex;
   justify-content: center;
+
+  cursor: pointer;
+}
+
+#customeWriteContainer__Btn:hover {
+  color: #ffffff;
+  background-color: #55b569;
+  border: none;
 }
 
 #customeWriteContainer__Maintext {
