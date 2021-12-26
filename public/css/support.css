@@ -5,7 +5,6 @@
 
 /* 메인컬러 #9AD2A5 #55B569 폰트컬러 #242925 */
 
-
 .subbanner__s {
   width: 1920px;
   height: 300px;
@@ -92,6 +91,8 @@
   font-family: "Noto Sans KR", sans-serif;
 
   cursor: pointer;
+
+  transition: 0.2s;
 }
 
 .support_use {
@@ -140,4 +141,10 @@
 .support_use_section_content {
   font-size: 20px;
   line-height: 34px;
+}
+
+.support_donation_left form input:hover {
+  color: #55b569;
+  background-color: #ffffff;
+  border: 1px solid #55b569;
 }
