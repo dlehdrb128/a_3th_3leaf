@@ -13,6 +13,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav ul {
   display: flex;
 }
@@ -38,7 +39,7 @@ header {
 
   display: none;
   /*opacity: 0;*/
-  
+
   transform: scaleY(0);
   transform-origin: 0px 0px;
 
@@ -70,7 +71,6 @@ header {
 .submenu__nav ul li a:last-child {
   padding-top: 30px;
 }
-
 
 .menu__header:hover .submenu {
   /*opacity: 100;*/
