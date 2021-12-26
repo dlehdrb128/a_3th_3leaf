@@ -13,6 +13,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .nav ul {
   display: flex;
 }
@@ -67,21 +68,15 @@ header {
 
 .menu__header:hover .submenu {
   opacity: 100;
-
   transition: 1s;
 }
 
 .menu__header:not(:hover) .submenu {
   opacity: 0;
-
   transition: 1s;
-}
-li {
-  padding: 30px;
 }
 a {
   display: block;
-  cursor: pointer;
 }
 
 a:hover {
