@@ -36,7 +36,13 @@ header {
   z-index: 9999;
   display: flex;
 
-  opacity: 0;
+  display: none;
+  /*opacity: 0;*/
+  
+  transform: scaleY(0);
+  transform-origin: 0px 0px;
+
+  transition: all 1s;
 }
 
 .submenu__nav {
@@ -65,16 +71,18 @@ header {
   padding-top: 30px;
 }
 
-.menu__header:hover .submenu {
-  opacity: 100;
 
-  transition: 1s;
+.menu__header:hover .submenu {
+  /*opacity: 100;*/
+  display: flex;
+
+  transform: scaleY(1);
+  transition-property: 1s;
 }
 
 .menu__header:not(:hover) .submenu {
-  opacity: 0;
-
-  transition: 1s;
+  /*opacity: 0;*/
+  /*display: none;*/
 }
 li {
   padding: 30px;
