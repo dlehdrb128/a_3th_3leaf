@@ -5,6 +5,32 @@
 
 /* 메인컬러 #9AD2A5 #55B569 폰트컬러 #242925 */
 
+
+.subbanner {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../public/image/subbanner/donate.png);
+  position: relative;
+}
+.subbanner div {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 99;
+}
+.subbanner .box {
+  width: 1920px;
+  height: 300px;
+  position: absolute;
+  background-color: black;
+  opacity: 70%;
+}
+
+
 .support {
   width: 1350px;
   height: 1307px;

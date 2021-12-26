@@ -4,6 +4,34 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
+
+.subbanner {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../public/image/subbanner/company.png);
+  position: relative;
+}
+.subbanner div {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 99;
+}
+.subbanner .box {
+  width: 1920px;
+  height: 300px;
+  position: absolute;
+  background-color: black;
+  opacity: 70%;
+}
+
+
+
+
 .introduce {
   width: 1350px;
   height: 1296px;
