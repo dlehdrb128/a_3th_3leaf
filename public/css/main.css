@@ -4,7 +4,6 @@
 
 
 .main-box-top{
-    height: 2530px;
     width: 1350px;
     margin:0 auto;
     cursor: default;
@@ -16,7 +15,7 @@
 
 .main-box {
   display: flex;
-  position: relative;
+  
 }
 
 
@@ -27,12 +26,13 @@
     margin: auto;
     padding-bottom: 100px;
     width: 1920px;
+
 }
 
 .main-top_img-text-box{
     position: absolute;
     top: 250px;
-    right: 65px;
+    right: 270px;
    
 }
 
@@ -65,7 +65,7 @@
     background-color: black;
 }
 .main-middle_img-left {
-    margin: auto;
+    margin-right: 150px;
     z-index: 20;
 }
 
@@ -123,6 +123,7 @@
 
 .main-last_img-box {
     display: flex;
+
 }
 
 .main-last_img-text{
@@ -138,7 +139,9 @@
 .main-last_img-text-box{
     width: 570px;
     height: 360px;
-    border: 2px solid black;
+    border: 2px solid #BFBFBF;
+    
+   
 }
 
 .main-last_img-text-head {
@@ -182,5 +185,7 @@
 }
 
 
-
+.main-height{
+    height: 2190px;
+}
 
