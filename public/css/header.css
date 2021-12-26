@@ -75,12 +75,8 @@ header {
   opacity: 0;
   transition: 1s;
 }
-li {
-  padding: 30px;
-}
 a {
   display: block;
-  cursor: pointer;
 }
 
 a:hover {
