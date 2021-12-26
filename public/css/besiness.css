@@ -1,6 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+KR:wght@100;500&display=swap");
 @import url(./reset.css);
 
+.subbanner {
+  width: 1920px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../public/image/subbanner/business.png);
+  position: relative;
+}
+.subbanner div {
+  display: flex;
+  font-size: 26px;
+  font-weight: bold;
+}
+.subbanner .box {
+  width: 1920px;
+  height: 300px;
+  position: absolute;
+  background-color: black;
+  opacity: 30%;
+}
+
 .besiness {
   width: 1350px;
   height: 2742px;
