@@ -95,10 +95,6 @@ app.get("/sponsor", (req, res) => {
   res.render("screens/sponsor");
 });
 
-app.get("/GoSponsor", (req,res) => {
-  res.render("screens/sponsor");
-})
-
 app.post("/SponsorInformation", (req, res) => {
   let name = req.body.name;
   let phone = req.body.phone;
