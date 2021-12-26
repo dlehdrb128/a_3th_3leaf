@@ -4,19 +4,9 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.subbanner__coms {
-  width: 1920px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../../public/image/subbanner/consulting.png');
-  position: relative;
-}
-
 .custome {
   width: 1350px;
-  height: 1019px;
+  height: 1070px;
   margin: 0 auto;
 }
 
@@ -119,23 +109,50 @@
 }
 
 .customePageNumber {
-  margin-top: 60px;
+  margin: 0 auto;
+
   font-size: 14px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: none;
   align-items: center;
 }
 
 .customePageNumber p:first-child {
+  margin-top: 60px;
+  margin-left: 642px;
+
   width: 24px;
 }
 
 .customePageNumber p:nth-child(2) {
+  margin-top: 60px;
   width: 24px;
 }
 
-.customePageNumber p:last-child {
+.customePageNumber p:nth-child(3) {
+  margin-top: 60px;
   width: 24px;
+
   color: #55b569;
+}
+
+#customeContainer__Btn {
+  margin-top: 0px;
+  margin-left: 310px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+
+  background-color: #fff;
+  color: #55b569;
+  border: 1px solid #55b569;
+
+  cursor: pointer;
+}
+
+#customeContainer__Btn:hover {
+  color: #ffffff;
+  background-color: #55b569;
+  border: none;
 }

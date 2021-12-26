@@ -43,6 +43,9 @@ app.get("/custome", (req,res) => {
     ORDER BY id DESC   
   `;
 
+  app.get("/actionCustomeWrite", (req,res) => {
+    res.render("screens/customeWrite")
+  });
   
   try {
     db.query(customeSelect, (error, rows) => {
