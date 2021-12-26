@@ -130,7 +130,7 @@
 
 .volunteer-support_button input:hover{
     background-color: #55B569;
-    border: 2px solid black;
+    border: 2px solid #55B569;
     color: #fff;
 }
 .volunteer-support_button input:focus{
