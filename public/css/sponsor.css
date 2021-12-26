@@ -10,7 +10,6 @@
   position: relative;
 }
 
-
 .sponsor {
   width: 1350px;
   height: 818px;
@@ -180,4 +179,12 @@
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.sponsor_submit input:hover {
+  color: #ffffff;
+  background-color: #55b569;
+  border: none;
 }
