@@ -4,6 +4,7 @@
 
 
 .main-box-top{
+    height: 1190px;
     width: 1350px;
     margin:0 auto;
     cursor: default;
@@ -15,7 +16,7 @@
 
 .main-box {
   display: flex;
-  
+  position: relative;
 }
 
 
@@ -86,18 +87,18 @@
 }
 
 .hover_text{
-    position: absolute  ;
-    top: 250px;
-    left: 320px;
+    position: absolute;
+    top:240px;
+    left:250px;
     color: #fff;
     font-size: 32px;
-    opacity: 0;
+   opacity: 0;
 }
 
 .hover_text1{
     position: absolute  ;
-    top: 250px;
-    right: 250px;
+    top:240px;
+    right:250px;
     color: #fff;
     font-size: 32px;
     opacity: 0;
@@ -185,7 +186,5 @@
 }
 
 
-.main-height{
-    height: 2190px;
-}
+
 
